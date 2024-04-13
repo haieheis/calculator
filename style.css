@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container{ /*основа калькулятора*/
+    box-shadow: 0px 0px 40px 15px rgb(129, 124, 124);
+    background: rgb(199, 190, 190);
+    border: 1px solid rgb(117, 109, 109, 0.01);
+    border-radius: 15px;
+    flex-basis: 500px; /*размер калькулятора*/
+    padding: 40px; /*внутренние отступы от границы калькулятора*/
+}
+
+body{
+    align-items: center;
+    background-color: rgb(171, 167, 163);
+    display: flex; /*выравнивание блоков*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: inherit;
+    justify-content: center; /*выравнивание калькулятора по центру*/
+}
+
+
+.screen{
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 6px;
+    box-shadow: 0px 1px 12px rgb(129, 124, 124);
+    font-size: 35px;
+    padding: 12px;
+    text-align: right;
+}
+
+
+.buttons_row{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0; /*внешние отступы ряда*/
+}
+
+.button{
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(102, 102, 102, 0.01);
+    border-radius: 11px;
+    box-shadow: 0 4px 40px rgb(146, 145, 145);
+    flex-basis: 18%;
+    font-family: inherit;
+    font-size: 25px;
+    height: 64px;
+}   
+
+.button:last-child{ /*настройка для последних кнопок в строке*/
+    background: rgb(97, 93, 93);
+    color: rgb(255, 255, 255);
+}
+
+.button:last-child:hover{ /*отображение кнопки при наведении курсора на нее*/
+    background-color: rgb(151, 151, 151);
+}
+
+.button:last-child:active{ /*отображение кнопки при нажатии на нее*/
+    background-color: rgb(175, 172, 172);
+}
+
+.button:hover{
+    background-color: rgba(91, 87, 87, 0.38);
+}
+
+.button:active{
+    background-color: rgb(115, 113, 113);
+}
+
+.o{
+    flex-basis: 79.5%;
+}
